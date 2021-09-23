@@ -1,0 +1,14 @@
+2021-09-23 20:10:46.376 +03:00 [INF] [ThreadId:1] NBomber '2.1.0' Started a new session: '2021-09-23_17.10.28_session_fad765b4'.
+2021-09-23 20:10:46.464 +03:00 [INF] [ThreadId:1] NBomber started as single node.
+2021-09-23 20:10:46.538 +03:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2021-09-23 20:10:46.538 +03:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2021-09-23 20:10:46.538 +03:00 [INF] [ThreadId:4] Starting init...
+2021-09-23 20:10:46.549 +03:00 [INF] [ThreadId:4] Target scenarios: 'simple_http'.
+2021-09-23 20:10:46.591 +03:00 [INF] [ThreadId:4] Start init client pool: 'nbomber_http_factory.simple_http'.
+2021-09-23 20:10:47.600 +03:00 [INF] [ThreadId:4] Init finished.
+2021-09-23 20:10:47.615 +03:00 [INF] [ThreadId:5] Starting warm up...
+2021-09-23 20:10:49.677 +03:00 [FTL] [ThreadId:7] Step 'step1' from scenario 'simple_http' has failed. Error: step timeout
+2021-09-23 20:10:50.685 +03:00 [FTL] [ThreadId:4] Step 'step1' from scenario 'simple_http' has failed. Error: step timeout
+2021-09-23 20:10:51.688 +03:00 [FTL] [ThreadId:5] Step 'step1' from scenario 'simple_http' has failed. Error: step timeout
+2021-09-23 20:10:52.693 +03:00 [FTL] [ThreadId:7] Step 'step1' from scenario 'simple_http' has failed. Error: step timeout
+2021-09-23 20:10:53.696 +03:00 [FTL] [ThreadId:10] Step 'step1' from scenario 'simple_http' has failed. Error: step timeout
