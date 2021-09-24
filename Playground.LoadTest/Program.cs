@@ -14,21 +14,21 @@ namespace Playground.LoadTest
             var step = Step.Create("step1", httpFactory, async context =>
             {
                 var response =
-                    await context.Client.GetAsync("http://20.101.217.162/weatherforecast/getpdf",
+                    await context.Client.GetAsync("https://localhost:5001/pdf/getpdf",
                                                   context.CancellationToken);
                 
                 
                 return response.IsSuccessStatusCode
                     ? Response.Ok(statusCode: (int)response.StatusCode)
                     : Response.Fail(statusCode: (int)response.StatusCode);
-            });
+            },timeout: TimeSpan.FromSeconds(2));
             
             var scenario = ScenarioBuilder
                            .CreateScenario("simple_http", step)
                            .WithWarmUpDuration(TimeSpan.FromSeconds(20))
                            .WithLoadSimulations(
                                Simulation.KeepConstant(1, TimeSpan.FromSeconds(5)),
-                               Simulation.InjectPerSec(rate: 1, during: TimeSpan.FromSeconds(10))
+                               Simulation.InjectPerSec(rate: 1, during: TimeSpan.FromSeconds(30))
                            );
 
             NBomberRunner
